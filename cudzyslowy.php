@@ -13,7 +13,8 @@ $liczba = 4;
 $koniec = ' koty';
 ?>
 
-<?= '$poczatek $liczba $koniec a chce mieć jeszcze dwa.'?><br>
+<?= '$poczatek $liczba $koniec a chce mieć jeszcze dwa.'?>
+<br>
 <?= "$poczatek $liczba $koniec a chce mieć jeszcze dwa."?>
 
 </body>
