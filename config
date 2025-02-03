@@ -1,0 +1,13 @@
+
+<VirtualHost *> 
+	DocumentRoot "C:\Users\ct21wozniakf\Documents\Git\PHP_4"
+        Alias /repo "C:\Users\ct21wozniakf\Documents\Git\PHP_4"
+    
+	<Directory "C:\Users\ct21wozniakf\Documents\git">
+        Options Indexes FollowSymLinks MultiViews
+        Require all granted
+        AllowOverride None
+        Order allow,deny
+        Allow from all
+    </Directory>
+</VirtualHost>
