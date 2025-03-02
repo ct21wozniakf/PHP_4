@@ -1,0 +1,60 @@
+a {
+    color: violet;
+    text-decoration: none;
+    border: 2px solid violet;
+    border-radius: 10px;
+    text-align: center;
+    background-color: antiquewhite;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    padding: 5px;
+    margin: 10px;
+
+}
+body {
+    background-color: rgb(250, 214, 247) ;
+}
+#login {
+    background-color: antiquewhite;
+    border: 2px solid violet;
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+#pass {
+    background-color: antiquewhite;
+    border: 2px solid violet;
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+label {
+    font-family: 'Courier New', Courier, monospace;
+}
+a:hover {
+    color: rgb(223, 30, 223);
+    text-decoration: none;
+    border: 2px solid rgb(223, 30, 223);
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgb(141, 130, 115);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+
+}
+.test {
+    color: blueviolet;
+}
+#nazwa {    background-color: antiquewhite;
+    border: 2px solid violet;
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;}
+#value {    background-color: antiquewhite;
+    border: 2px solid violet;
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;}
+#czas {    background-color: antiquewhite;
+    border: 2px solid violet;
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;}
+
+
+
