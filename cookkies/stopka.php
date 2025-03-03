@@ -1,1 +1,1 @@
-<footer><strong>ZGrrr</strong></footer>
+<footer><strong><hr></strong></footer>
