@@ -1,0 +1,28 @@
+include, require -  pobiera cały tekst/kod/znaczniki występujące w określonym pliku i kopiuje je do pliku, który używa instrukcji include.
+
+sa identyczne jedyna sytuacja w jakiej jest roznica to w przypadku wystapienia bledu gdyz require spowoduje błąd krytyczny i zatrzyma skrypt a include spowoduje jedynie wygenerowanie ostrzeżenia a skrypt będzie kontynuowany
+--------------------------------------------------
+fopen() - uruchamia plik albo podany adres url.
+
+Parametry - filename(wymagany), mode(wymagany), include_path(opcjonalny), context(opcjonalny)
+--------------------------------------------------
+fread() - odczytuje zawartość otworzonego pliku
+
+Parametry - file(wymagany), length(wymagany)
+--------------------------------------------------
+feof() - sprawdza czy osiągnięto koniec otwartego pliku
+
+Parametry - file(wymagany)
+--------------------------------------------------
+fgets()  - zwraca linie z otwartego pliku
+
+Parametry - file(wymagany), length(opcjonalny)
+--------------------------------------------------
+fwrite() - zwraca liczbę pomyślnie zapisanych pełnych elementów
+
+Parametry -  file(wymagany), string(wymagany), length(opcjonalny)
+--------------------------------------------------
+fclose() - zamyka otwarty plik
+
+Parametry - filepointer(wymagany)
+--------------------------------------------------

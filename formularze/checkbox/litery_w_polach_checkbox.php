@@ -42,12 +42,12 @@ if($_SERVER["REQUEST_METHOD"] === 'POST')
     {
         if(count($POST["rok"]===1))
             {
-                echo ""
+                echo " "
             }
 
 
     }
-
+}
 ?>
 
 
