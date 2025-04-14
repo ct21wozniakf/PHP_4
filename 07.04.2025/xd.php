@@ -55,7 +55,7 @@ if (mysqli_num_rows($result) > 0) { ?>
         <td><?= $row["AUTOR"]?></td>
         <td><?= $row["WYDAWNICTWO"]?></td>
         <td><?= $row["ROK_WYD"]?></td>
-        <td><?= $row["CENAW"]?></td>
+        <td style="text-align: right;"><?= $row["CENAW"]?></td>
 
 
     </tr>   
