@@ -13,9 +13,9 @@
     </style>
 </head>
 <body>
-    <h1>Tabela <i>czytelnicy</i></h1>
+    <h1>Tabela <i>książki</i></h1>
 <?php 
-$sql = "select count(Nr_czytelnika) as liczba from czytelnicy;";
+$sql = "select count(Sygnatura) as liczba from ksiazki;";
 $result = mysqli_query($conn, $sql);
 if (mysqli_num_rows($result) > 0) { 
 while($row = mysqli_fetch_assoc($result)) {
@@ -30,24 +30,23 @@ echo "ni ma";
 
 <table>
 <?php
-$sql = "select * from czytelnicy;";
+$sql = "select * from ksiazki;";
 $result = mysqli_query($conn, $sql);
 
 if (mysqli_num_rows($result) > 0) { ?>
 
 <tr>
-    <th>Nr_czytelnika</th>
+    <th>Sygnatura</th>
+    <th>Tytuł</th>
     <th>Nazwisko</th>
     <th>Imie</th>
-    <th>Data_ur</th>
-    <th>Ulica</th>
-    <th>Kod</th>
-    <th>Miasto</th>
-    <th>Data_zapisania</th>
-    <th>Data_skreslenia</th>
-    <th>Nr_legitymacji</th>
-    <th>Funkcja</th>
-    <th>Plec</th>
+    <th>Wydawnictwo</th>
+    <th>Miejsce_wyd</th>
+    <th>Rok_wyd</th>
+    <th>Objetosc_ks</th>
+    <th>Cena</th>
+    <th>Id_dzial</th>
+
 
 </tr>
 <?php
@@ -55,20 +54,16 @@ while($row = mysqli_fetch_assoc($result)) {
 ?>
 
 <tr>
-    <td><?= $row["Nr_czytelnika"]?></td>
+    <td><?= $row["Sygnatura"]?></td>
+    <td><?= $row["Tytul"]?></td>
     <td><?= $row["Nazwisko"]?></td>
     <td><?= $row["Imie"]?></td>
-    <td><?= $row["Data_ur"]?></td>
-    <td><?= $row["Ulica"]?></td>
-    <td><?= $row["Kod"]?></td>
-    <td><?= $row["Miasto"]?></td>
-    <td><?= $row["Data_zapisania"]?></td>
-    <td><?= $row["Data_skreslenia"]?></td>
-    <td><?= $row["Nr_legitymacji"]?></td>
-    <td><?= $row["Funkcja"]?></td>
-    <td><?= $row["Plec"]?></td>
-
-
+    <td><?= $row["Wydawnictwo"]?></td>
+    <td><?= $row["Miejsce_wyd"]?></td>
+    <td><?= $row["Rok_wyd"]?></td>
+    <td><?= $row["Objetosc_ks"]?></td>
+    <td><?= $row["Cena"]?></td>
+    <td><?= $row["Id_dzial"]?></td>
 
 </tr>   
 

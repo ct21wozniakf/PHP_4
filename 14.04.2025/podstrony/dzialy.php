@@ -13,7 +13,7 @@
     </style>
 </head>
 <body>
-    <h1>Tabela działy</h1>
+    <h1>Tabela <i>działy</i></h1>
 <?php 
 $sql = "select count(Id_dzial) as liczba from dzialy;";
 $result = mysqli_query($conn, $sql);

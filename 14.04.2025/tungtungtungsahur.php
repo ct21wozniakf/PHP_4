@@ -14,8 +14,8 @@
   <div class="kolumna lewa">
         <div class="linki"><a class="link" href="tungtungtungsahur.php?podstrona=glowna">Strona Główna</a></div>
         <div class="linki"><a class="link" href="tungtungtungsahur.php?podstrona=czytelnicy">Tabela Czytelnicy</a></div>
-        <div class="linki"><a class="link" href="tungtungtungsahur.php?podstrona=dzialy">Tabela działy</a></div>
-
+        <div class="linki"><a class="link" href="tungtungtungsahur.php?podstrona=dzialy">Tabela Działy</a></div>
+        <div class="linki"><a class="link" href="tungtungtungsahur.php?podstrona=ksiazki">Tabela Książki</a></div>
   </div>
 
 
@@ -42,6 +42,6 @@
   </div>
   <?php require 'db/disconnect.php'; ?>
 </div>
-
+        
 </body>
 </html>
