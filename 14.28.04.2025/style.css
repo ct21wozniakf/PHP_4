@@ -1,14 +1,23 @@
 *{
-    box-sizing: border-box;
+  box-sizing: border-box;
+  }
+body{
+  margin: 0;
+  height: 1415px;
+}
+.row{
+    height: 100%;
   }
 .kolumna{
     float: left;
     padding: 10px;
+    
   }
-  
 .lewa{
     width: 25%;
     background-color: bisque;
+    height: 100%; 
+    
   }
   
 .prawa{
@@ -27,9 +36,21 @@ a{
     text-decoration: none;
 }
 .link:hover{
-    background-color: blanchedalmond;
+    background-color: rgba(128,128,128,0.2 );
+    width: 100%;
 }
 div.linki{
     font-weight: bold;
     font-size: 30px;
+}
+.active{
+
+   background-color: burlywood;
+   width: 100%;
+}
+table{
+  border-collapse: collapse;
+}
+td,th{
+  border: 1px solid black;
 }

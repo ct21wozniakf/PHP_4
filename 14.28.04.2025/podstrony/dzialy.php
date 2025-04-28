@@ -1,18 +1,4 @@
-<!DOCTYPE html>
-<html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        table{
-            border-collapse: collapse;
-        }
-        td,th{
-            border: 1px solid black;
-        }
-    </style>
-</head>
-<body>
+
     <h1>Tabela <i>działy</i></h1>
 <?php 
 $sql = "select count(Id_dzial) as liczba from dzialy;";
@@ -57,5 +43,3 @@ echo "ni ma";
 ?>
 
 </table>
-</body>
-</html>

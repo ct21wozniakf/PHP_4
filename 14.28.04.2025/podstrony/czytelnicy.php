@@ -1,18 +1,4 @@
-<!DOCTYPE html>
-<html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        table{
-            border-collapse: collapse;
-        }
-        td,th{
-            border: 1px solid black;
-        }
-    </style>
-</head>
-<body>
+
     <h1>Tabela <i>czytelnicy</i></h1>
 <?php 
 $sql = "select count(Nr_czytelnika) as liczba from czytelnicy;";
@@ -30,10 +16,13 @@ echo "ni ma";
 
 <table>
 <?php
-$sql = "select * from czytelnicy;";
+$sql = "select *, CONCAT(SUBSTRING(Kod, 1, 2), '-', SUBSTRING(Kod, 3, 3)) AS kod_pocztowy from czytelnicy;";
 $result = mysqli_query($conn, $sql);
 
 if (mysqli_num_rows($result) > 0) { ?>
+
+<?php $znak = "-";
+$pozycja = 3; ?>
 
 <tr>
     <th>Nr_czytelnika</th>
@@ -60,7 +49,7 @@ while($row = mysqli_fetch_assoc($result)) {
     <td><?= $row["Imie"]?></td>
     <td><?= $row["Data_ur"]?></td>
     <td><?= $row["Ulica"]?></td>
-    <td><?= $row["Kod"]?></td>
+    <td><?= $row["kod_pocztowy"]?></td>
     <td><?= $row["Miasto"]?></td>
     <td><?= $row["Data_zapisania"]?></td>
     <td><?= $row["Data_skreslenia"]?></td>
@@ -80,5 +69,3 @@ echo "ni ma";
 ?>
 
 </table>
-</body>
-</html>
