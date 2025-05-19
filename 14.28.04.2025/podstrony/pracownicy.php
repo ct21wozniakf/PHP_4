@@ -25,7 +25,7 @@ if (mysqli_num_rows($result) > 0) { ?>
     <th>Id_pracownika</th>
     <th>Nazwisko</th>
     <th>Imie</th>
-    <th>Nazwa_stanowisko</th>
+    <th>Nazwa_stanowiska</th>
     <th>Miasto</th>
     <th>Data_zatrudnienia</th>
     <th>Wynagrodzenie</th>
