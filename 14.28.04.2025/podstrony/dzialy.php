@@ -33,6 +33,7 @@ while($row = mysqli_fetch_assoc($result)) {
 <tr>
     <td><?= $row["Id_dzial"]?></td>
     <td><?= $row["Nazwa"]?></td>
+    <td><a href="tungtungtungsahur.php?podstrona=dzialy_edytuj&id=<?=$row['Id_dzial']?>&dzialy=<?= $row['Nazwa'] ?>">edycja</a></td>
 <td></td>
 </tr>   
 
