@@ -28,7 +28,7 @@ body{
     display: table;
     clear: both;
   }
-a{
+a.link{
     width: 90%;
     padding: 5px;
     display: block;
@@ -52,4 +52,7 @@ table{
 }
 td,th{
   border: 1px solid black;
+}
+a.ups{
+  text-decoration: none;
 }

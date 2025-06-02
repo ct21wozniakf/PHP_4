@@ -16,7 +16,7 @@ echo "ni ma";
 
 <table>
 <?php
-$sql = "select *, dzialy.Nazwa as nazwa from ksiazki inner join dzialy on ksiazki.Id_Dzial = dzialy.Id_dzial;";
+$sql = "select *, CONCAT(FLOOR(CENA), ' zł ', LPAD(ROUND((CENA - FLOOR(CENA)) * 100), 2, '0'), ' gr') CENAW, dzialy.Nazwa as nazwa from ksiazki inner join dzialy on ksiazki.Id_Dzial = dzialy.Id_dzial;";
 $result = mysqli_query($conn, $sql);
 
 if (mysqli_num_rows($result) > 0) { ?>
@@ -48,7 +48,7 @@ while($row = mysqli_fetch_assoc($result)) {
     <td><?= $row["Miejsce_wyd"]?></td>
     <td><?= $row["Rok_wyd"]?></td>
     <td><?= $row["Objetosc_ks"]?></td>
-    <td><?= $row["Cena"]?></td>
+    <td><?= $row["CENAW"]?></td>
     <td><?= $row["nazwa"]?></td>
 
 </tr>   

@@ -1,5 +1,5 @@
 
-<h1>Tabela <i>książki</i></h1>
+<h1>Tabela <i>stanowiska</i></h1>
 <?php 
 $sql = "select count(Id_stanowisko) as liczba from stanowiska;";
 $result = mysqli_query($conn, $sql);
@@ -24,7 +24,7 @@ if (mysqli_num_rows($result) > 0) { ?>
 <tr>
     <th>Id_stanowisko</th>
     <th>Nazwa</th>
-
+    <th><a class="ups" href="tungtungtungsahur.php?podstrona=stanowiska_dodaj">╰⋃╯</a></th>
 
 </tr>
 <?php
@@ -34,7 +34,7 @@ while($row = mysqli_fetch_assoc($result)) {
 <tr>
     <td><?= $row["Id_stanowisko"]?></td>
     <td><?= $row["Nazwa"]?></td>
-
+    <td><a class="ups" href="tungtungtungsahur.php?podstrona=stanowiska_edytuj&id=<?=$row['Id_stanowisko']?>&dzialy=<?= $row['Nazwa'] ?>">edycja </a><a class="ups" href="tungtungtungsahur.php?podstrona=stanowiska_usun&id=<?=$row['Id_stanowisko']?>&dzialy=<?= $row['Nazwa'] ?>">usuń</a></td>
 
 </tr>   
 

@@ -55,7 +55,7 @@ while($row = mysqli_fetch_assoc($result)) {
     <td><?= $row["Data_skreslenia"]?></td>
     <td><?= $row["Nr_legitymacji"]?></td>
     <td><?= $row["Funkcja"]?></td>
-    <td><?php if ($row["Plec"] == "M")  { echo "mezczyzna"; } else { echo "kobieta"; } ?></td>
+    <td><?php if ($row["Plec"] == "M")  { echo "mężczyzna"; } else { echo "kobieta"; } ?></td>
 
 
 

@@ -1,5 +1,5 @@
 
-<h1>Tabela <i>książki</i></h1>
+<h1>Tabela <i>wypożyczenia</i></h1>
 <?php 
 $sql = "select count(Nr_transakcji) as liczba from wypozyczenia;";
 $result = mysqli_query($conn, $sql);
