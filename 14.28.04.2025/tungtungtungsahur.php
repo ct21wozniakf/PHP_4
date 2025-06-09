@@ -1,3 +1,6 @@
+<?php
+session_start()
+?>
 <!DOCTYPE html>
 <html lang="pl">
 <head>
@@ -19,6 +22,8 @@
         <div class="linki"><a class="link <?= ($_GET['podstrona'] ?? '') == 'pracownicy' ? 'active' : '' ?>" href="tungtungtungsahur.php?podstrona=pracownicy">Tabela <i>Pracownicy</i></a></div>
         <div class="linki"><a class="link <?= ($_GET['podstrona'] ?? '') == 'stanowiska' ? 'active' : '' ?>" href="tungtungtungsahur.php?podstrona=stanowiska">Tabela <i>Stanowiska</i></a></div>
         <div class="linki"><a class="link <?= ($_GET['podstrona'] ?? '') == 'wypozyczenia' ? 'active' : '' ?>" href="tungtungtungsahur.php?podstrona=wypozyczenia">Tabela <i>Wypożyczenia</i></a></div>
+        <br><br>
+        <div class="linki"><a class="link <?= ($_GET['podstrona'] ?? '') == 'logowanie' ? 'active' : '' ?>" href="tungtungtungsahur.php?podstrona=logowanie">Logowanie</a></div>
   </div>
 
 
