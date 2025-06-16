@@ -26,7 +26,7 @@ if (mysqli_num_rows($result) > 0) { ?>
     <th>Nazwa</th>
     <?php
     if(isset($_SESSION['login_status']) == 'zalogowany' && isset($_SESSION['login_status']) == 'zalogowany'){ ?>
-    <th><a class="ups" href="tungtungtungsahur.php?podstrona=dzialy_dodaj">╰⋃╯</a></th>
+    <th><a class="ups" href="tungtungtungsahur.php?podstrona=dzialy_dodaj"><img width="35" height="35" src="https://cdn.pixabay.com/photo/2012/04/02/16/07/plus-24844_640.png" alt=""></a></th>
     <?php } else { }?>
 </tr>
 <?php
@@ -38,7 +38,7 @@ while($row = mysqli_fetch_assoc($result)) {
     <td><?= $row["Nazwa"]?></td>
     <?php
     if(isset($_SESSION['login_status']) == 'zalogowany' && isset($_SESSION['login_status']) == 'zalogowany'){ ?>
-    <td><a class="ups" href="tungtungtungsahur.php?podstrona=dzialy_edytuj&id=<?=$row['Id_dzial']?>&dzialy=<?= $row['Nazwa'] ?>">edycja </a><a class="ups" href="tungtungtungsahur.php?podstrona=dzialy_usun&id=<?=$row['Id_dzial']?>&dzialy=<?= $row['Nazwa'] ?>">usuń</a></td>
+    <td><a class="ups" href="tungtungtungsahur.php?podstrona=dzialy_edytuj&id=<?=$row['Id_dzial']?>&dzialy=<?= $row['Nazwa'] ?>"><img width="35" height="35" src="https://www.svgrepo.com/show/451169/pencil-mark.svg" alt=""> </a><a class="ups" href="tungtungtungsahur.php?podstrona=dzialy_usun&id=<?=$row['Id_dzial']?>&dzialy=<?= $row['Nazwa'] ?>"><img width="35" height="35" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Red_X.svg/2048px-Red_X.svg.png" alt=""></a></td>
     <?php } else { }?>
 </tr>   
 
